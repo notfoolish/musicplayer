@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenelejátszó</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Zenelejátszó</h1>
+        <div class="audio-player">
+            <audio id="audioPlayer">
+                <source src="assets/music/mikee.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+                <button id="prevBtn" class="btn btn-primary">⏮</button>
+                <button id="playPauseBtn" class="btn btn-success">▶</button>
+                <button id="nextBtn" class="btn btn-primary">⏭</button>
+                <input id="seekBar" type="range" value="0" class="seek-bar">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h2 id="songTitle">Song Title</h2>
+            <p id="songArtist">Artist Name</p>
+            <img id="songImage" src="assets/images/default.png" alt="Song Image" class="img-fluid mt-3" style="max-width: 300px; border-radius: 10px;">
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
